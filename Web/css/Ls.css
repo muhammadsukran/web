@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Edu+NSW+ACT+Foundation&family=Foldit:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.login {
+    border: 3px solid transparent;
+    width: 20%;
+    padding: 10px;
+    background: rgba(216, 191, 216, 0.3);
+    z-index: 1;
+    backdrop-filter: blur(1px);
+    box-shadow: 0px 0px 10px #FFFAFA,
+    			0px 0px 30px #D8BFD8,
+    			0px 0px 60px #87CEEB;
+    animation: gogo 1s infinite linear;
+
+}
+@keyframes gogo {
+    0% {
+        border-image-source: linear-gradient(90deg, #B57EDC, transparent);
+        border-image-slice: 1;
+        box-shadow: 0 0 10px #B57EDC; 
+    }
+    50% {
+        border-image-source: linear-gradient(180deg, #B57EDC, transparent 50%, #B57EDC 50%);
+        border-image-slice: 1;
+        box-shadow: 0 0 10px #B57EDC;
+    }
+    100% {
+        border-image-source: linear-gradient(270deg, #B57EDC, transparent);
+        border-image-slice: 1;
+        box-shadow: 0 0 10px #B57EDC;
+    }
+}
+.SignUp {
+    border: 3px solid transparent;
+    width: 20%;
+    padding: 10px;
+    background: rgba(216, 191, 216, 0.1);
+    z-index: 1;
+    backdrop-filter: blur(0px);
+    box-shadow: 0px 0px 10px #FFFAFA,
+    			0px 0px 30px #D8BFD8,
+    			0px 0px 60px #87CEEB;
+    opacity: 1;
+    animation: gogo 1.5s infinite linear;
+}
+
+@keyframes gogo {
+    0% {
+        border-image-source: linear-gradient(90deg, #B57EDC, transparent,#AFEEEE);
+        border-image-slice: 3;
+        box-shadow: 0 0 10px #B57EDC
+        			0 0 10px #87CEFA;
+    }
+    50% {
+        border-image-source: linear-gradient(180deg, #B57EDC, #AFEEEE 50%,transparent 50%);
+        border-image-slice: 3;
+        box-shadow: 0 0 10px #B57EDC
+        			0 0 10px #87CEFA;
+    }
+    100% {
+        border-image-source: linear-gradient(270deg, #B57EDC, transparent, #AFEEEE);
+        border-image-slice: 3;
+        box-shadow: 0 0 10px #B57EDC,
+        			0 0 10px #87CEFA;
+    }
+}
+.login input {
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 80%;
+	background: transparent;
+	border: 3px solid transparent;
+	margin: 0 auto;
+	animation: soso 1s infinite linear;
+
+}
+@keyframes soso {
+    0% {
+        border-image-source: linear-gradient(90deg, #DEB887, transparent);
+        border-image-slice: 1;
+        box-shadow: 0 0 10px #DEB887; 
+    }
+    50% {
+        border-image-source: linear-gradient(180deg, #DEB887, transparent 50%, #DEB887 50%);
+        border-image-slice: 1;
+        box-shadow: 0 0 10px #DEB887;
+    }
+    100% {
+        border-image-source: linear-gradient(270deg, #DEB887, transparent);
+        border-image-slice: 1;
+        box-shadow: 0 0 10px #DEB887;
+    }
+}
+
+.SignUp input {
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 80%;
+	background: transparent;
+	border: 3px solid transparent;
+	margin: 0 auto;
+	animation: soso 1s infinite linear;
+
+
+}
+@keyframes soso {
+    0% {
+        border-image-source: linear-gradient(90deg, #DEB887, transparent);
+        border-image-slice: 1;
+        box-shadow: 0 0 10px #DEB887; 
+    }
+    50% {
+        border-image-source: linear-gradient(180deg, #DEB887, transparent 50%, #DEB887 50%);
+        border-image-slice: 1;
+        box-shadow: 0 0 10px #DEB887;
+    }
+    100% {
+        border-image-source: linear-gradient(270deg, #DEB887, transparent);
+        border-image-slice: 1;
+        box-shadow: 0 0 10px #DEB887;
+    }
+}
+.login input::placeholder{
+	color: #DDA0DD; 
+}
+.SignUp input::placeholder {
+    color: #DDA0DD; 
+}
+.login label{
+	display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: 	#FFEFD5;
+    margin: 0 auto;
+    margin-left: 25px;
+    text-shadow: 0px 0px 5px black;
+}
+.SignUp label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: 	#FFEFD5;
+    margin: 0 auto;
+    margin-left: 25px;
+    text-shadow: 0px 0px 5px black;
+}
+.login2 input[type="submit"] {
+	display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: rgba(240, 128, 128, 0.8);
+    margin-bottom: 5px;
+    border: 1px solid #DA70D6;
+   	font-weight: bold;
+   	font-size: 15px;
+   	color: 	#DEB887;
+   	border-radius: 20px;
+   	padding: 10px;
+}
+ .login2 input[type="submit"].no-animation {
+    animation: none; 
+    border-image-source: none;
+    box-shadow: none;
+}
+
+.login2 input[type="submit"].no-animation:hover {
+    background: #DB7093;
+	color: wheat;
+}
+.SignUp input[type="submit"].no-animation {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: rgba(240, 128, 128, 0.8);
+    margin-bottom: 5px;
+    border: 1px solid #DA70D6;
+   	font-weight: bold;
+   	font-size: 15px;
+   	color: 	#DEB887;
+   	border-radius: 20px;
+   	padding: 10px;
+   	animation: none; 
+    border-image-source: none;
+    box-shadow: none;
+}
+
+.SignUp input[type="submit"].no-animation:hover{
+	background: #DB7093;
+	color:  black;
+
+}
+
+.login button{
+	background: transparent;
+	backdrop-filter: blur(10px);
+	border: 1px solid #DA70D6;
+	color: #9400D3;
+	text-shadow: 0px 0px 10px #EE82EE;
+}
+.SignUp button{
+	background: transparent;
+	backdrop-filter: blur(10px);
+	border: 1px solid #DA70D6;
+	color: rgba(65, 105, 225, 0.8);
+	text-shadow: 0px 0px 10px #EE82EE;
+	font-weight: bold;
+}
+.login button:hover {
+	background: #663399;
+	color: wheat;
+}
+.SignUp button:hover{
+	background: #663399;
+	color: wheat;
+}
+
+.login h2{
+	margin-left: 20px;
+	font-size: 30px;
+	font-family: 'Agbalumo', system-ui;
+	font-weight: bold;
+	color:#F08080;
+	text-shadow:0px 0px 15px #C71585;
+}
+.SignUp h2 {
+	margin-left: 20px;
+	font-size: 30px;
+	font-family: 'Agbalumo', system-ui;
+	font-weight: bold;
+	color:#F08080;
+	text-shadow: 	0px 0px 5px white,
+					0px 0px 10px black,
+					0px 0px 15px #C71585;
+
+}
+
+.background img{
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-height: 90%;
+	min-width: 1500px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: -1;
+	object-fit: cover;
+	-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size: cover;
+	filter: brightness(0.8);
+}
+
+.sign-up p{
+	font-weight: bold;
+	text-decoration: none;
+	color: wheat;
+}
+.sign-up a{
+	text-decoration: none;
+}
+.sign-up a:hover{
+    color: skyblue;
+    font-weight: bold;
+}
